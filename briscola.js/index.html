@@ -6,10 +6,199 @@
   <title>briscola.js</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <!--<link rel="stylesheet" type="text/css" href="css/core.css">-->
+  <style type="text/css">
+    html, body, #main, .table {
+      height: 100%;
+    }
+    #loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: auto;
+      background-color: black;
+
+    }
+    #loader::before {
+      content: '';
+      background-image: url(img/cards/0/9);
+      background-repeat: no-repeat;
+      width: 90px;
+      height: 90px;
+      background-size: contain;
+      border-radius: 50%;
+      left: 60px;
+      top: 50%;
+      position: absolute;
+    }
+    #loader::after {
+      content: 'BRISCOLA \a SICILIANA';
+      white-space: pre;
+      font-family: fantasy;
+      font-size: 45px;
+      color: orangered;
+      position: absolute;
+      top: 50%;
+      left: 180px;
+      margin-top: -10px;
+    }
+    #deck {
+      /*display: none;*/
+    }
+    #trump {
+      left: 60px;
+    }
+    .card {
+      width: 58px;
+      height: 88px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    #deck,
+    .card.back {
+      border: 1px solid transparent;
+    }
+    .card.empty_slot {
+      visibility: hidden;
+    }
+
+    .card,
+    .player .card.card-enter,
+    .player .card.card-appear {
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+    .player .card.card-enter.card-enter-active,
+    .player .card.card-appear.card-appear-active,
+    .player .card.card-leave.card-leave-active,
+    .match  .card.card-leave.card-leave-active {
+      transition: all 1000ms ease-out;
+    }
+    .player .card,
+    .player .card.card-enter.card-enter-active,
+    .player .card.card-appear.card-appear-active {
+      left: 50%;
+    }
+    .player .card_0,
+    .player .card_0.card-enter.card-enter-active,
+    .player .card_0.card-appear.card-appear-active {
+      left: calc(50% - 90px);
+    }
+    .player .card_2,
+    .player .card_2.card-enter.card-enter-active,
+    .player .card_2.card-appear.card-appear-active {
+      left: calc(50% + 90px);
+    }
+    .p0 .card,
+    .p0 .card.card-enter.card-enter-active,
+    .p0 .card.card-appear.card-appear-active {
+      top: calc(100% - 90px);
+    }
+    .p1 .card,
+    .p1 .card.card-enter.card-enter-active,
+    .p1 .card.card-appear.card-appear-active {
+      top: 0;
+    }
+
+    .match .card.card-enter {
+      opacity: 0;
+    }
+    .match .p0_card,
+    .p0 .card.card-leave.card-leave-active {
+      top: 50%; 
+      left: calc(50% + 90px);
+    }
+    .match .p1_card,
+    .p1 .card.card-leave.card-leave-active {
+      top: 50%; 
+      left: 50%;
+    }
+    .match .p0_won.card-leave.card-leave-active {
+      top: calc(100% - 90px); 
+      left: 50%;
+    }
+    .match .p1_won.card-leave.card-leave-active {
+      top: 0; 
+      left: 50%;
+    }
+
+
+    .score-panel {
+      font-family: fantasy, Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+    }
+    .score-panel > .players {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .score-panel .player {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 7rem;
+    }
+    .score-panel .player .score {
+      font-size: 3rem;
+    }
+    .score-panel .player .score.pos {
+      color: limegreen;
+    }
+    .score-panel .player .score.neg {
+      color: darkred;
+    }
+    .score-panel button {
+      color: #000;
+    }
+    .score-panel .card {
+      position: relative;
+      display: inline-block;
+      /* background: transparent none no-repeat; */
+      background-size: contain;
+      width: 60px;
+      height: 90px;
+      max-width: 60px;
+      max-height: 90px;
+      /* border-radius: 6px; */
+      /* border: 2px solid; */
+      /* border-color: transparent; */
+      margin: 2px;
+      box-shadow: none;
+      background-repeat: no-repeat;
+    }
+    /*
+    .score-panel .card {
+      position: relative;
+      display:inline-block; 
+      background: transparent none no-repeat;
+      background-size: contain;
+      width: 60px;
+      height: 90px;
+      border-radius: 6px;
+      border: 2px solid;
+      border-color: transparent;
+    }*/
+    
+    #controls {
+      position: absolute;
+      right: 0;
+    }
+    #controls button {
+      display: flex;
+    }
+  </style>
 </head>
 <body>
   <div id="main"></div>
-  <script src="./js/app.bundle.js"></script>
+  <script src="js/app.bundle.js"></script>
 </body>
 </html>
