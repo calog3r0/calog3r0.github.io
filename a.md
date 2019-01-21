@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: post
 title: Ciao
 ---
 
 ciao ciao
-##hfjc
+## hfjc
 gjvj
