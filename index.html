@@ -6,7 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calogero Miraglia</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <!--http://www.mrmcguire.com/10-useful-google-font-combinations-for-your-next-site/-->
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
+  <!--<link href="css/tooltip.css" rel="stylesheet">
+  <script src="js/tooltip.js"></script>-->
   <style>
     * {
       font-family: 'Roboto', sans-serif;
@@ -17,32 +21,151 @@
       margin: 0 auto;
       padding: 0 15px;
     }
+    header {
+      margin-bottom: 1.5em;
+    }
+    footer {
+      margin-top: 1.5em;
+    }
     footer a {
       color: black;
     }
+    section#about {
+      /*font-size: 1.4em;*/
+    }
+    h1 {
+      margin-bottom: 0.2em;
+    }
+    h2 {
+      /*text-decoration: underline;*/
+    }
+    .visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+    .text-right {
+      text-align: right;
+    }
+
+
+    * {
+      font-family: monospace;
+      font-family: 'Roboto Mono';
+    }
+    html {
+      height: 100%;
+      background-color: #212a2d;
+      color: white;
+      /*font-size: 1.4em;*/
+      font-size: 1.4em;
+    }
+    body {
+      max-width: 768px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    a, 
+    footer a {
+      color: white;
+    }
+    section {
+      border-radius: 10px;
+      padding: 30px;
+      margin: 35px 0px;
+    }
+    section.blue {
+      background-color: #0152cc;
+    }
+    section.green {
+      background-color: #17b96d;
+    }
+    section.red {
+      background-color: #ce3e1d;
+    }
+    section.cyan {
+      background-color: #3bc2ff;
+    }
+    footer {
+      margin-bottom: 1.5em;
+    }
+    #myInput {
+      min-width: 294px;
+    }
+    .right {
+      float: right;
+    }
+    /*
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }*/
   </style>
 </head>
 <body>
   <header>
-    <h1>Calogero Miraglia</h1>
+    <h1>Hello, I'm Calogero</h1>
+    <hr>
   </header>
-  <hr>
 
-  I'm a software engineer. I build things. I fix things. And much more. 
+  <section id="about" class="blue">
+    <h2 class="visually-hidden">About me</h2>
+
+    I'm a software engineer. Usually working with Javascript, PHP (Wordpress, CodeIgniter, Laravel, Symfony), MySQL.
+    
+  </section>
   
-  <h2>Projects on github</h2>
-  <ul>
-    <li><a href="https://github.com/calog3r0/briscola.js">briscola.js</a> (<a href="demo/briscola.js/index.html">demo</a>)</li>
-    <li><a href="https://github.com/calog3r0/clicklog.js">clicklog.js</a> (<a href="demo/clicklog.js/index.html">demo</a>)</li>
-    <li>takeapicture.js (<a href="demo/takeapicture.js/index.html">demo</a>)</li>
-    <li><a href="https://github.com/calog3r0/tictactoe.py">tictactoe.py</a></li>
-    <li><a href="https://github.com/calog3r0/guess.js">guess.js</a></li>
-    <li><a href="https://github.com/calog3r0/life_expectancy">life_expectancy</a></li>
-  </ul>
-  <hr>
-  <footer>
-    <a href="https://github.com/calog3r0">github</a> •
-    <a href="https://www.linkedin.com/in/calogeromiraglia">linkedin</a>
+  <section class="green">
+    <h2>Projects on GitHub</h2>
+    <ul>
+      <li><a href="https://github.com/calog3r0/briscola.js" target="_blank">briscola.js</a> [<a href="demo/briscola.js/index.html" target="_blank">demo</a>]</li>
+      <li><a href="https://github.com/calog3r0/clicklog.js" target="_blank">clicklog.js</a> [<a href="demo/clicklog.js/index.html" target="_blank">demo</a>]</li>
+      <li>takeapicture.js [<a href="demo/takeapicture.js/index.html" target="_blank">demo</a>]</li>
+      <li><a href="https://github.com/calog3r0/tictactoe.py" target="_blank">tictactoe.py</a></li>
+      <li><a href="https://github.com/calog3r0/guess.js" target="_blank">guess.js</a></li>
+      <li><a href="https://github.com/calog3r0/life_expectancy" target="_blank">life_expectancy</a></li>
+    </ul>
+  </section>
+
+  <section class="red">
+    <h2>Some of the fine people I've worked with</h2>
+
+    <a href="https://github.com/tgianko" target="_blank">tgianko</a>, 
+    <a href="https://github.com/rehacktive" target="_blank">rehacktive</a>,
+    <a href="https://github.com/netrace" target="_blank">netrace</a>, 
+    <a href="https://github.com/bogomips" target="_blank">bogomips</a>, 
+    <a href="https://github.com/satore11" target="_blank">satore11</a>, 
+    <a href="https://github.com/morfeus87" target="_blank">morfeus87</a>
+  </section>
+
+  <!--
+  <section class="cyan">
+    <h2>Contact me</h2>
+    
+    
+    <input type="text" value="email@gmail.com" id="myInput">
+
+    <div class="tooltip">
+      <button onclick="myFunction()" onmouseout="outFunc()">
+        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+        Copy text
+      </button>
+    </div>
+    
+  </section>
+  -->
+  
+
+  <footer class="">
+    <hr>
+    <a href="https://github.com/calog3r0" target="_blank">GitHub</a> &bull;
+    <a href="https://www.linkedin.com/in/calogeromiraglia" target="_blank">LinkedIn</a> &bull;
+    <a href="https://twitter.com/calog3r0" target="_blank">Twitter</a>
   </footer>
 </body>
 </html>
