@@ -22,11 +22,12 @@ a {
 h1 {
   margin-bottom: 0.2em;
 }
-h2 {
+h2, h3 {
   /*text-decoration: underline;*/
   margin-top: 0;
 }
-section {
+section, 
+#contact {
   border-radius: 8px;
   padding: 1em 1.5em;
 }
@@ -34,7 +35,38 @@ header, footer, section {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
+/*
+#get-in-touch, 
+#get-in-touch a,
+button[type="submit"] {
+  color: #212a2d;
+}
+*/
+#contact label,
+button[type="submit"] {
+  font-weight: bold;
+}
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+}
 
+
+
+#about-me p:first-of-type {
+  margin-top: 0;
+}
+/*
+#about-me form {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+#about-me button {
+  padding: 1em;
+  border-radius: 8px;
+}
+*/
 
 .bg_blue {
   background-color: #0152cc;
@@ -47,6 +79,24 @@ header, footer, section {
 }
 .bg_cyan {
   background-color: #3bc2ff;
+}
+.bg_orange {
+  background-color: #ffa93b;
+}
+.bg_yellow {
+  background-color: #f1ff33;
+}
+.bg_white {
+  background-color: white;
+}
+
+.bg_white,
+.bg_white a {
+  color: #212a2d;
+}
+.bg_white a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
@@ -62,6 +112,34 @@ header, footer, section {
 .text-right {
   text-align: right;
 }
-.right {
-  float: right;
+
+
+/*
+<div class="row">
+  <div class="column"></div>
+  <div class="column"></div>
+</div>
+*/
+.row {
+  display: flex;
 }
+.column {
+  flex: 50%;
+}
+
+/*
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+}
+
+a.button {
+  color: #212a2d;
+  padding: 10px;
+  border-radius: 5px;
+}
+*/
