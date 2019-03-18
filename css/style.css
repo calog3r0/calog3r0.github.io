@@ -1,17 +1,23 @@
 * {
   /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Roboto Mono', monospace;
-  line-height: 1.5em;
+  line-height: 1.9;
 }
 html {
   height: 100%;
   background-color: #212a2d;
   color: white;
-  font-size: 1.4em;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 1.3rem;
+  }
 }
 body {
   /*max-width: 640px;*/
   max-width: 768px;
+  /*max-width: 992px;*/
   position: relative;
   margin: 0 auto;
   padding: 0 15px;
@@ -26,78 +32,87 @@ h2, h3 {
   /*text-decoration: underline;*/
   margin-top: 0;
 }
-section, 
-#contact {
+section {
   border-radius: 8px;
-  padding: 1em 1.5em;
+  padding: 1em 1em;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 1em 1.5em;
+  }
 }
 header, footer, section {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/*
-#get-in-touch, 
-#get-in-touch a,
-button[type="submit"] {
-  color: #212a2d;
-}
-*/
-#contact label,
-button[type="submit"] {
-  font-weight: bold;
-}
-#contact input,
-#contact textarea {
-  width: 100%;
-  padding: 10px;
-}
-
-
-
-#about-me p:first-of-type {
+section#about p:first-of-type {
   margin-top: 0;
 }
-/*
-#about-me form {
+#contact,
+#contact a {
+  color: #212a2d;
+}
+#contact a {
+  text-decoration: none;
+  font-weight: bold;
+}
+#contact > div > div {
+  padding-top: 0.5em;
+}
+#contact-form {
+  padding: 0 1em 1em;
+  border-radius: 8px;
   margin-top: 2em;
   margin-bottom: 1em;
 }
-#about-me button {
-  padding: 1em;
-  border-radius: 8px;
+#contact-form label,
+#contact-form input[type="submit"] {
+  font-weight: bold;
 }
-*/
+/*#contact-form input[type="text"],
+#contact-form input[type="email"],*/
+#contact-form input,
+#contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0.5em;
+}
+
 
 .bg_blue {
   background-color: #0152cc;
+  background-color: #1565C0;
 }
 .bg_green {
   background-color: #17b96d;
-}
-.bg_red {
-  background-color: #ce3e1d;
-}
-.bg_cyan {
-  background-color: #3bc2ff;
+  /*background-color: #8BC34A;*/
 }
 .bg_orange {
   background-color: #ffa93b;
+  /*background-color: #F44336;*/
+  background-color: #FF5722;
+}
+.bg_cyan {
+  background-color: #3bc2ff;
+  background-color: #2196F3;
+}
+.bg_red {
+  background-color: #ce3e1d;
+  background-color: #B71C1C;
+  background-color: #AD1457;
+  background-color: #E91E63;
 }
 .bg_yellow {
+  background-color: #f1ff33;
   background-color: #f1ff33;
 }
 .bg_white {
   background-color: white;
 }
 
-.bg_white,
-.bg_white a {
-  color: #212a2d;
-}
-.bg_white a {
-  text-decoration: none;
-  font-weight: bold;
-}
+
 
 
 .visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
@@ -111,6 +126,9 @@ button[type="submit"] {
 
 .text-right {
   text-align: right;
+}
+.text-center {
+  text-align: center;
 }
 
 
