@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Calogero Miraglia - Software Engineer</title>
   <meta name="description" content="About me. Projects on GitHub. Contacts."/>
@@ -79,16 +79,16 @@
           <h3>Send me a message</h3>
           <form method="POST" action="https://5ybhggu4ri.execute-api.eu-west-1.amazonaws.com/dev">
             <div class="form-control">
-              <label for="">Name</label>
-              <input type="text" name="name" placeholder="Your name" required />
+              <label for="contactName">Name</label>
+              <input type="text" name="name" id="contactName" placeholder="Your name" required />
             </div>
             <div class="form-control">
-              <label for="">Email</label> 
-              <input type="email" name="email" placeholder="Your email" required /> 
+              <label for="contactEmail">Email</label> 
+              <input type="email" name="email" id="contactEmail" placeholder="Your email" required /> 
             </div>
             <div class="form-control">
-              <label for="">Message</label> 
-              <textarea name="message" placeholder="Your message" required></textarea> 
+              <label for="contactMessage">Message</label> 
+              <textarea name="message" id="contactMessage" placeholder="Your message" required></textarea> 
             </div>
             <input type="submit" value="Send The Mail" />
           </form>
