@@ -3,7 +3,7 @@
 <head>
   <title>Calogero Miraglia - Software Engineer</title>
   <meta name="description" content="About me. Projects on GitHub. Contacts."/>
-
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -77,14 +77,20 @@
         </div>
         <div id="contact-form" class="_column bg_white">
           <h3>Send me a message</h3>
-          <form method="POST" action="">
-            <label for="">Name</label> <br>
-            <input type="text" name="name" placeholder="Your name" required disabled> <br><br>
-            <label for="">Email</label> <br>
-            <input type="email" name="email" placeholder="Your email" required disabled> <br><br>
-            <label for="">Message</label> <br>
-            <textarea name="message" placeholder="Your message" required disabled></textarea> <br><br>
-            <input type="submit" value="Send The Mail" disabled>
+          <form method="POST" action="https://5ybhggu4ri.execute-api.eu-west-1.amazonaws.com/dev">
+            <div class="form-control">
+              <label for="">Name</label>
+              <input type="text" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-control">
+              <label for="">Email</label> 
+              <input type="email" name="email" placeholder="Your email" required /> 
+            </div>
+            <div class="form-control">
+              <label for="">Message</label> 
+              <textarea name="message" placeholder="Your message" required></textarea> 
+            </div>
+            <input type="submit" value="Send The Mail" />
           </form>
         </div>
       </div>

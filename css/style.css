@@ -79,7 +79,9 @@ section#about p:first-of-type {
   min-width: 100%;
   padding: 0.5em;
 }
-
+.form-control {
+  margin-bottom: 2em;
+}
 
 .bg_blue {
   background-color: #0152cc;
