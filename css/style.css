@@ -48,7 +48,7 @@ header, footer, section {
 section#about p:first-of-type {
   margin-top: 0;
 }
-#contact,
+#contact, 
 #contact a {
   color: #212a2d;
 }
@@ -163,3 +163,9 @@ a.button {
   border-radius: 5px;
 }
 */
+
+
+@font-face{
+  font-family:'digital-7';
+  src: url('../fonts/digital-7.regular.ttf');
+}
