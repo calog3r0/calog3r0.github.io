@@ -1,174 +1,43 @@
-* {
-  /*font-family: 'Roboto', sans-serif;*/
-  /*font-family: 'Roboto Mono', monospace;
-  line-height: 1.9;*/
-}
-html {
-  height: 100%;
-  background-color: #212a2d;
-  color: white;
-  font-size: 16px;
-  font-family: 'Roboto Mono', monospace;
-  line-height: 1.9;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 1.3rem;
-  }
-}
-body {
-  /*max-width: 640px;*/
-  max-width: 768px;
-  /*max-width: 992px;*/
-  position: relative;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-a {
-  color: white;
-}
-h1 {
-  margin-bottom: 0.2em;
-}
-h2, h3 {
-  /*text-decoration: underline;*/
-  margin-top: 0;
-}
-section {
-  border-radius: 8px;
-  padding: 1em 1em;
-}
-@media (min-width: 768px) {
-  section {
-    padding: 1em 1.5em;
-  }
-}
-header, footer, section {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-section#about p:first-of-type {
-  margin-top: 0;
-}
-form,
-#contact, 
-#contact a {
-  color: #212a2d;
-}
-#contact a {
-  text-decoration: none;
-  font-weight: bold;
-}
-#contact > div > div {
-  padding-top: 0.5em;
-}
-#contact-form {
-  padding: 0 1em 1em;
-  border-radius: 8px;
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-#contact-form label,
-#contact-form input[type="submit"] {
-  font-weight: bold;
-}
-/*#contact-form input[type="text"],
-#contact-form input[type="email"],*/
-#contact-form input,
-#contact-form textarea {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 100%;
-  min-width: 100%;
-  padding: 0.5em;
-}
-.form-control {
-  margin-bottom: 2em;
+/* Sticky footer */
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; }
+body > section { flex: 1 0 auto; }
+body > footer { flex-shrink: 0; }
+
+html { font-family: 'Spectral', serif; line-height: 2rem; font-size: 18px; color: #111; }
+header, footer, button { font-family: 'Roboto', sans-serif; }
+body > header .site-description { font-family: 'Spectral', serif; }
+body { padding: 1rem; }
+
+@media screen and (min-width: 768px) {
+  body { width: 768px; margin: 0 auto; }
 }
 
-.bg_blue {
-  background-color: #0152cc;
-  background-color: #1565C0;
-}
-.bg_green {
-  background-color: #17b96d;
-  /*background-color: #8BC34A;*/
-}
-.bg_orange {
-  background-color: #ffa93b;
-  /*background-color: #F44336;*/
-  background-color: #FF5722;
-}
-.bg_cyan {
-  background-color: #3bc2ff;
-  background-color: #2196F3;
-}
-.bg_red {
-  background-color: #ce3e1d;
-  background-color: #B71C1C;
-  background-color: #AD1457;
-  background-color: #E91E63;
-}
-.bg_yellow {
-  background-color: #f1ff33;
-  background-color: #f1ff33;
-}
-.bg_white {
-  background-color: white;
-}
+body > header { margin-top: 1rem; font-size: 1.5rem; }
+body > header .site-title, body > header .site-description { display: inline; }
+body > header .site-description, body > footer { color: #767676; }
+body > header nav { margin-top: 0.5rem; }
+
+body > footer { margin-top: 4rem; margin-bottom: 4rem; } 
+main article { margin-top: 4rem; }
+main article h1, main article h2 { font-size: 2rem; line-height: 3rem; margin: 0; }
+main article footer .date { color: #767676; font-size: 85%; }
+h1::before, h2::before { background: #767676; content: "\020"; display: block; height: 2px; margin: 1rem 0; width: 1em; }
+
+/*a { color: rgb(0, 0, 238); }*/
+a { color: #0073aa; }
+a:focus { outline: thin dotted; }
+/*main article footer a { color: #767676; }*/
+a:hover { text-decoration: none; }
+body > header a { font-weight: bold; }
+body > header a { text-decoration: none; margin-right: 0.5rem; }
+main article footer a { text-decoration: none; margin-right: 2rem; }
+body > header a:focus, main article footer a:hover { text-decoration: underline; }
 
 
-
-
-.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-  position: absolute !important;
-  height: 1px; width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-
-
-/*
-<div class="row">
-  <div class="column"></div>
-  <div class="column"></div>
-</div>
-*/
-.row {
-  display: flex;
-}
-.column {
-  flex: 50%;
-}
-
-/*
-a.button {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-
-  text-decoration: none;
-  color: initial;
-}
-
-a.button {
-  color: #212a2d;
-  padding: 10px;
-  border-radius: 5px;
-}
-*/
-
-
-@font-face{
-  font-family:'digital-7';
-  src: url('../fonts/digital-7.regular.ttf');
-}
+.form-control { margin-bottom: 1em; }
+.form-control label { display: block; }
+.form-control label { font-weight: bold; }
+.form-control input, .form-control textarea {box-sizing: border-box;padding: 0.5em;/* background: olivedrab; */}
+.form-control textarea { resize: none; }
+.form-control textarea { width: 100%; max-width: 320px; min-width: 187px;}

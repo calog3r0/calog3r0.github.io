@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css?v=2.10">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
   <header>
@@ -27,53 +26,33 @@
     <main>
       <article>
         <header>
-          <h2>Life Expectancy in San Cataldo, Sicily</h2>
+          <h1>Contact</h1>
         </header>
-        <p>Extracting text from images using "Google Tesseract OCR" Python library</p>
-        <footer>
+        <div class="entry-content">
           <p>
-            <a href="https://github.com/calog3r0/life_expectancy"><b><i class="fas fa-code"></i> GITHUB</b></a>
+            You can send me a message <a href="https://twitter.com/calog3r0"
+            >on Twitter</a> or connect with me <a href="https://www.linkedin.com/in/calogeromiraglia"
+            >on LinkedIn</a>. <br>
+            You can also email me using the form below.              
           </p>
-          <p class="date"><i class="far fa-clock"></i> January 3, 2019</p>
-        </footer>
-      </article>
-      <article>
-        <header>
-          <h2>Tic-tac-toe</h2>
-        </header>
-        <p>The "Xs and Os" game in Python</p>
-        <footer>
-          <p>
-            <a href="https://github.com/calog3r0/tictactoe.py"><b><i class="fas fa-code"></i> GITHUB</b></a>
-          </p>
-          <p class="date"><i class="far fa-clock"></i> December 31, 2018</p>
-        </footer>
-      </article>
-      <article>
-        <header>
-          <h2>ClickLog</h2>
-        </header>
-        <p>Experimenting with localstorage and Date in JavaScript</p>
-        <footer>
-          <p>
-            </i> <a href="https://github.com/calog3r0/clicklog.js"><b><i class="fas fa-code"></i> GITHUB</b></a>
-            <a href="demo/clicklog.js/index.html"><b><i class="fas fa-play-circle"></i> DEMO</b></a>
-          </p>
-          <p class="date"><i class="far fa-clock"></i> April 30, 2018</p>
-        </footer>
-      </article>
-      <article>
-        <header>
-          <h2>BriscolaJS</h2>
-        </header>
-        <p>Trick-taking card game made in JavaScript using React.js</p>
-        <footer>
-          <p>
-            <a href="https://github.com/calog3r0/briscola.js"><b><i class="fas fa-code"></i> GITHUB</b></a>
-            <a href="demo/briscola.js/index.html"><b><i class="fas fa-play-circle"></i> DEMO</b></a>
-          </p>
-          <p class="date"><i class="far fa-clock"></i> November 20, 2017</p>
-        </footer>
+          <form method="POST" action="https://5ybhggu4ri.execute-api.eu-west-1.amazonaws.com/dev">
+            <div class="form-control">
+              <label for="contactName">Name</label>
+              <input type="text" name="name" id="contactName" placeholder="Your name" required />
+            </div>
+            <div class="form-control">
+              <label for="contactEmail">Email</label> 
+              <input type="email" name="email" id="contactEmail" placeholder="Your email" required /> 
+            </div>
+            <div class="form-control">
+              <label for="contactMessage">Message</label> 
+              <textarea rows="5" name="message" id="contactMessage" placeholder="Your message" required></textarea> 
+            </div>
+            <div class="form-control submit">
+              <button class="button" type="submit"><i class="far fa-envelope"></i> Send The Mail</button>
+            </div>
+          </form>
+        </div>
       </article>
     </main>
   </section>
