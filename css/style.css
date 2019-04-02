@@ -17,7 +17,7 @@ body { padding: 1rem; }
 
 body > header { margin-top: 1rem; font-size: 1.5rem; }
 body > header .site-title, body > header .site-description { display: inline; }
-body > header .site-description, body > footer { color: #767676; }
+body > header .site-description, body > footer, body > footer a { color: #767676; }
 body > header nav { margin-top: 0.5rem; }
 
 body > footer { margin-top: 4rem; margin-bottom: 4rem; } 
