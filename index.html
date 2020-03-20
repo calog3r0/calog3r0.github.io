@@ -12,9 +12,9 @@
     <!--<link rel="stylesheet" href="css/style.css?v=2.11">-->
     <style>
         html { font-size: 20px; font-family: sans-serif; line-height: 1.75; margin: 1rem; }
-        body { max-width: 750px; margin: 0 auto; }
+        body { max-width: 650px; margin: 0 auto; }
 
-        h1 { font-family: 'Montserrat'; }
+        h1 { font-size: 2.5rem; font-family: 'Montserrat'; }
 
         ul { list-style-type: none; padding: 0; margin: 0; }
         li p { margin: 0; }
@@ -26,7 +26,6 @@
         section { margin: 2rem 0; }
         section:first-child { margin-top: 0; }
         section:last-child { margin-bottom: 3rem; }
-        section:first-child form { display: none; }
         
         /*i, a, span { font-size: 1.2rem; }*/
         /*li p:nth-child(3) { text-decoration: underline; font-style: oblique; }*/
@@ -35,6 +34,11 @@
         .sep:before { content: '\0223E'; /*content: '\0020'; content: '\00a0\00a0\0007C\00a0\00a0'; content: '\022A2'; content: '\0223C';*/ }
         .fab:after, .far:after, .fas:after { content: '\00a0'; }
         /*#resume, h1, h2, h3, li p:nth-child(3) { display: none; }*/
+
+        @media (min-width: 750px) { 
+            section { margin: 2.5rem 0 2rem; }
+            /*section:first-child { margin-top: 3rem; }*/
+        }
 
         /*@media (min-width: 2750px) { 
             h1 { font-size: 3.5rem; }
@@ -84,11 +88,17 @@
     <section>
         <h1>Calogero Miraglia</h1>
         <p>Software Engineer, Web Developer</p>
+        <!--
         <form id="resume" method="GET" target="_blank" action="">
             <div class="form-control submit">
                 <button class="button" type="submit"><i class="far fa-file-alt"></i> DOWNLOAD CV</button>
             </div>
         </form>
+        <div>
+            <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/calog3r0"><i class="fab fa-github"></i></a>
+        </div>
+        -->
     </section>
     <hr>
     <section id="projects">
@@ -125,8 +135,8 @@
     <section>
         <h2>Contact</h2>
         <ul>
-            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn</a></li>
-            <li><i class="fab fa-github"></i> <a href="https://github.com/calog3r0">GitHub</a></li>
+            <li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn</a></li>
+            <li><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub</a></li>
         </ul>
         <!--
         <div id="email">
