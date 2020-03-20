@@ -7,162 +7,65 @@
     <meta name="description" content="About me. Projects on GitHub. Contact. Resume."/>
     <title>Calogero Miraglia - Software Engineer, Web Developer</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!--<link rel="stylesheet" href="css/style.css?v=2.11">-->
     <style>
-        html { font-size: 20px; font-family: sans-serif; line-height: 1.75; margin: 1rem; }
-        body { max-width: 650px; margin: 0 auto; }
+        html { font-size: 14pt; font-family: serif; line-height: 1.5; }
+        body { max-width: 600px; margin: 0 auto; padding: 1rem 2rem 1rem; }
 
-        h1 { font-size: 2.5rem; font-family: 'Montserrat'; }
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; }
+        h1, h2 { margin-bottom: 0.7rem; }
+        p { margin: 0.1rem 0 0.2rem; }
+        li { margin: 1rem 0; }
 
         ul { list-style-type: none; padding: 0; margin: 0; }
-        li p { margin: 0; }
-        li p:nth-child(3) { text-transform: lowercase; }
 
-        li { margin: 1rem 0 0.5rem; }
-        #projects li { margin: 2rem 0 1.5rem; }
-
-        section { margin: 2rem 0; }
+        ul, section, #projects li { margin: 2rem 0; }
         section:first-child { margin-top: 0; }
-        section:last-child { margin-bottom: 3rem; }
-        
-        /*i, a, span { font-size: 1.2rem; }*/
-        /*li p:nth-child(3) { text-decoration: underline; font-style: oblique; }*/
 
-        .warning { color: red; }
-        .sep:before { content: '\0223E'; /*content: '\0020'; content: '\00a0\00a0\0007C\00a0\00a0'; content: '\022A2'; content: '\0223C';*/ }
+        .sep:before { content: '\0223E'; }
         .fab:after, .far:after, .fas:after { content: '\00a0'; }
-        /*#resume, h1, h2, h3, li p:nth-child(3) { display: none; }*/
-
-        @media (min-width: 750px) { 
-            section { margin: 2.5rem 0 2rem; }
-            /*section:first-child { margin-top: 3rem; }*/
-        }
-
-        /*@media (min-width: 2750px) { 
-            h1 { font-size: 3.5rem; }
-            h2 { font-size: 2.5rem; }
-            h3, h3 i, h3 span { font-size: 1.5rem; }
-            
-            li p:nth-child(1) { font-size: 1.5rem }
-            li p:nth-child(2) { font-size: 1rem; }
-            li p:nth-child(3) { font-size: 1rem; }
-
-            #projects li { margin: 3rem 0 2.5rem; }
-            
-            section { margin: 4rem 0 3.5rem; }
-            section:first-child h1 + p { font-size: 1.5rem; }
-            section:first-child form { margin-top: 3.5rem; }
-        }*/
-
-        /* FORM */
-
-        #email { display: none; }
-        #email:target { display: block; }
-
-        #email { background-color: #fff; color: grey; }
-        #email { margin-top: 5rem; padding: 1.5rem; }
-        #email { border: 1px solid darkgray; /*border-radius: 5px;*/ }
-
-        .form-control { margin-bottom: 2rem; }
-        .form-control.submit { margin-bottom: 0; }
-        .form-control label { display: block; padding: 0 0 0.75rem; }
-        .form-control label, .form-control button { font-weight: bold; }
-        .form-control input, .form-control textarea { box-sizing: border-box; padding: 0.5rem; /*background: olivedrab;*/ }
-        .form-control textarea { resize: none; }
-        /*.form-control textarea { width: 100%; max-width: 320px; min-width: 187px; }*/
-
-        form { margin-top: 2rem; text-align: left; }
-        .form-control input { width: 100%; }
-        .form-control textarea { width: 100%; max-width: 100%; }
-        .form-control button { padding: 0.5rem; }
-
-        @media (min-width: 750px) { 
-            /*#email { border-width: 1px; padding: 3rem; }
-            .form-control button { padding: 1rem; }*/
-        }
     </style>
 </head>
 <body>
     <section>
         <h1>Calogero Miraglia</h1>
         <p>Software Engineer, Web Developer</p>
-        <!--
-        <form id="resume" method="GET" target="_blank" action="">
-            <div class="form-control submit">
-                <button class="button" type="submit"><i class="far fa-file-alt"></i> DOWNLOAD CV</button>
-            </div>
-        </form>
-        <div>
-            <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/calog3r0"><i class="fab fa-github"></i></a>
-        </div>
-        -->
-    </section>
-    <hr>
-    <section id="projects">
-        <h2>Toy projects</h2>
-        <ul>
-            <li>
-                <p><b>Briscola.JS</b></p>
-                <p>Trick-taking card game made in JavaScript using React.js</p> 
-                <p><a href="https://github.com/calog3r0/briscola.js">Source</a> <span class="sep"></span> <a href="demo/briscola.js/index.html">Demo</a></p>
-            </li>
-            <li>
-                <p><b>Serverless Contact Form</b></p>
-                <p>Contact Form for Static Websites using AWS</p>
-                <p><a href="https://github.com/calog3r0/aws-contact-form">Source</a><!-- <span class="sep"></span> <a href="#email">Demo</a>--></p>
-            </li>
-            <li>
-                <p><b>Life Expectancy in San Cataldo, Sicily</b></p>
-                <p>Extracting text from images using "Google Tesseract OCR" Python library</p>
-                <p><a href="https://github.com/calog3r0/life_expectancy">Source</a></p>
-            </li>
-            <li>
-                <p><b>Tic-tac-toe</b></p>
-                <p>The "Xs and Os" game in Python</p>
-                <p><a href="https://github.com/calog3r0/tictactoe.py">Source</a></p>
-            </li>
-            <li>
-                <p><b>ClickLog</b></p>
-                <p>Experimenting with localstorage and Date in JavaScript</p>
-                <p><a href="https://github.com/calog3r0/clicklog.js">Source</a> <span class="sep"></span> <a href="demo/clicklog.js/index.html">Demo</a></p>
-            </li>
-        </ul>
-    </section>
-    <hr>
-    <section>
-        <h2>Contact</h2>
         <ul>
             <li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn</a></li>
             <li><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub</a></li>
         </ul>
-        <!--
-        <div id="email">
-            <div class="warning">
-                <i class="fas fa-exclamation-triangle"></i> <b>GAME OVER:</b> The AWS Free Tier Period Expired!<br>
-            </div>
-            <h3><i class="far fa-envelope"></i> Send me a message</h3>
-            <form method="POST" action="">
-                <div class="form-control">
-                    <label for="contactName">Name</label>
-                    <input type="text" name="name" id="contactName" placeholder="Your name" required disabled />
-                </div>
-                <div class="form-control">
-                    <label for="contactEmail">Email</label> 
-                    <input type="email" name="email" id="contactEmail" placeholder="Your email" required disabled /> 
-                </div>
-                <div class="form-control">
-                    <label for="contactMessage">Message</label> 
-                    <textarea rows="5" name="message" id="contactMessage" placeholder="Your message" required disabled></textarea> 
-                </div>
-                <div class="form-control submit">
-                    <button class="button" type="submit" disabled>SEND!</button>
-                </div>
-            </form>
-        </div>
-        -->
+    </section>
+    <hr>
+    <section id="projects">
+        <ul>
+            <li>
+                <p><b>Briscola.JS</b></p>
+                <p>Trick-taking card game made in JavaScript using React.js</p> 
+                <p><a href="https://github.com/calog3r0/briscola.js">source</a> <span class="sep"></span> <a href="demo/briscola.js/index.html">demo</a></p>
+            </li>
+            <li>
+                <p><b>Serverless Contact Form</b></p>
+                <p>Contact Form for Static Websites using AWS</p>
+                <p><a href="https://github.com/calog3r0/aws-contact-form">source</a><!-- <span class="sep"></span> <a href="#email">Demo</a>--></p>
+            </li>
+            <li>
+                <p><b>Life Expectancy in San Cataldo, Sicily</b></p>
+                <p>Extracting text from images using "Google Tesseract OCR" Python library</p>
+                <p><a href="https://github.com/calog3r0/life_expectancy">source</a></p>
+            </li>
+            <li>
+                <p><b>Tic-tac-toe</b></p>
+                <p>The "Xs and Os" game in Python</p>
+                <p><a href="https://github.com/calog3r0/tictactoe.py">source</a></p>
+            </li>
+            <li>
+                <p><b>ClickLog</b></p>
+                <p>Experimenting with localstorage and Date in JavaScript</p>
+                <p><a href="https://github.com/calog3r0/clicklog.js">source</a> <span class="sep"></span> <a href="demo/clicklog.js/index.html">demo</a></p>
+            </li>
+        </ul>
     </section>
 </body>
 </html>
