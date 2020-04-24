@@ -5,67 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="About me. Projects on GitHub. Contact. Resume."/>
-    <title>Calogero Miraglia - Software Engineer, Web Developer</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Calogero Miraglia | Home page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!--<link rel="stylesheet" href="css/style.css?v=2.11">-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style>
-        html { font-size: 14pt; font-family: serif; line-height: 1.5; }
-        body { max-width: 600px; margin: 0 auto; padding: 1rem 2rem 1rem; }
-
-        h1 { font-size: 2rem; }
-        h2 { font-size: 1.5rem; }
-        h1, h2 { margin-bottom: 0.7rem; }
-        p { margin: 0.1rem 0 0.2rem; }
-        li { margin: 1rem 0; }
-
-        ul { list-style-type: none; padding: 0; margin: 0; }
-
-        ul, section, #projects li { margin: 2rem 0; }
-        section:first-child { margin-top: 0; }
-
-        .sep:before { content: '\00B7'; vertical-align: middle; }
-        .fab:after, .far:after, .fas:after { content: '\00A0'; }
+        html { font-family: 'Ubuntu', sans-serif; font-size: 14pt; line-height: 1.5; }
+        body { max-width: 850px; margin: 0 auto; padding: 1rem 2rem; }
+        h1, h2, p, ul, footer { margin: 1.5rem 0; }
     </style>
 </head>
 <body>
-    <section>
-        <h1>Calogero Miraglia</h1>
-        <p>Software Engineer, Web Developer</p>
-        <ul>
-            <li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn</a></li>
-            <li><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub</a></li>
-        </ul>
-    </section>
+    <h1>Calogero Miraglia</h1>
     <hr>
-    <section id="projects">
-        <ul>
-            <li>
-                <p><b>Briscola.JS</b></p>
-                <p>Trick-taking card game made in JavaScript using React.js</p> 
-                <p><a href="https://github.com/calog3r0/briscola.js">source</a> <span class="sep"></span> <a href="demo/briscola.js/index.html">demo</a></p>
-            </li>
-            <li>
-                <p><b>Serverless Contact Form</b></p>
-                <p>Contact Form for Static Websites using AWS</p>
-                <p><a href="https://github.com/calog3r0/aws-contact-form">source</a><!-- <span class="sep"></span> <a href="#email">Demo</a>--></p>
-            </li>
-            <li>
-                <p><b>Life Expectancy in San Cataldo, Sicily</b></p>
-                <p>Extracting text from images using "Google Tesseract OCR" Python library</p>
-                <p><a href="https://github.com/calog3r0/life_expectancy">source</a></p>
-            </li>
-            <li>
-                <p><b>Tic-tac-toe</b></p>
-                <p>The "Xs and Os" game in Python</p>
-                <p><a href="https://github.com/calog3r0/tictactoe.py">source</a></p>
-            </li>
-            <li>
-                <p><b>ClickLog</b></p>
-                <p>Experimenting with localstorage and Date in JavaScript</p>
-                <p><a href="https://github.com/calog3r0/clicklog.js">source</a> <span class="sep"></span> <a href="demo/clicklog.js/index.html">demo</a></p>
-            </li>
-        </ul>
-    </section>
+    <h2>About me</h2>
+    <p>
+        I am a software engineer and a web developer in Sicily, Italy. 
+        I specialize in backend development and databases. I am interested in 
+        new technologies and I'm seeking new challenges. You can find me on:
+    </p>
+    <ul class="">
+        <li><a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn</a></li>
+        <li><a target="_blank" href="https://github.com/calog3r0">GitHub</a></li>
+    </ul>
+    <h2>Projects</h2>
+    <ul>
+        <li>A JavaScript implementation of <a href="https://github.com/calog3r0/briscola.js">the game of briscola</a> (<a href="demo/briscola.js/index.html">live demo</a>)</li>
+        <li>A <a href="https://github.com/calog3r0/aws-contact-form">serverless contact form</a> for static websites using AWS</li>
+        <li>Simple implementation of the <a href="https://github.com/calog3r0/tictactoe.py">tic-tac-toe</a> game in Python</li>
+        <li><a href="https://github.com/calog3r0/clicklog.js">ClickLog</a>, an experiment with localstorage and Date in JavaScript (<a href="demo/clicklog.js/index.html">live demo</a>)</li>
+        <li>A <a href="https://github.com/calog3r0/life_expectancy">script</a> extracting text from images to estimate the life expectancy in a village in Sicily</li>
+    </ul>
 </body>
 </html>
