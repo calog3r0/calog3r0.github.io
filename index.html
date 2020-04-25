@@ -11,7 +11,7 @@
         body { max-width: 650px; margin: 0 auto; padding: 1rem 1.5rem 2.5rem; }
         h2 { margin: 1.5em 0 1rem; }
         ul.contact { list-style-type: none; padding: 0; margin: 0; line-height: 1.66; }
-        .fab:after { content: '\00A0'; }
+        .fab:after, .far:after, .fas:after { content: '\00A0'; }
         
         @media (min-width: 576px) { 
             html { font-size: 14pt; line-height: 1.5; }
@@ -36,12 +36,15 @@
         Learn more about me on <a target="_blank" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">my resume</a>.
     </p>
     <h2>Projects</h2>
-    <ul>
-        <li>A JavaScript implementation of <a href="https://github.com/calog3r0/briscola.js">the game of briscola</a> (<a href="demo/briscola.js/index.html">live demo</a>)</li>
-        <li>A <a href="https://github.com/calog3r0/aws-contact-form">serverless contact form</a> for static websites using AWS</li>
-        <li>Simple implementation of the <a href="https://github.com/calog3r0/tictactoe.py">tic-tac-toe</a> game in Python</li>
-        <li><a href="https://github.com/calog3r0/clicklog.js">An experiment</a> with localstorage and Date in JavaScript (<a href="demo/clicklog.js/index.html">live demo</a>)</li>
-        <li>A <a href="https://github.com/calog3r0/life_expectancy">script extracting text from images</a> and doing statistics</li>
+    <ul class="contact">
+        <li><a href="demo/briscola.js/index.html"><i class="fas fa-play"></i></a> <a href="https://github.com/calog3r0/briscola.js">Briscola.js</a>, a JavaScript implementation of the game of briscola</li>
+        <li><i class="far fa-save"></i> <a href="https://github.com/calog3r0/aws-contact-form">A serverless contact form</a> for static websites using AWS</li>
+        <li><i class="far fa-save"></i> <a href="https://github.com/calog3r0/tictactoe.py">Tic-tac-toe.py</a>, simple implementation of the game in Python</li>
+        <li><a href="demo/clicklog.js/index.html"><i class="fas fa-play"></i></a> <a href="https://github.com/calog3r0/clicklog.js">ClickLog</a>, an experiment with localstorage and Date in JavaScript</li>
+        <li><i class="far fa-save"></i> <a href="https://github.com/calog3r0/life_expectancy"> A script extracting text from images</a> and doing statistics</li>
     </ul>
+    <p>
+        Click on &nbsp;<a href="#x"><i class="fas fa-play"></i></a> to play or launch the demo
+    </p>
 </body>
 </html>
