@@ -12,11 +12,16 @@
         body { max-width: 600px; margin: 0 auto; padding: 1rem 1.5rem 2.5rem; }
         h2 { margin: 1.5em 0 1rem; }
         ul.no-style { list-style-type: none; padding: 0; margin: 0; line-height: 1.66; }
-        .fab:after, .far:after, .fas:after { content: '\00A0'; }
+        .fab:after, .far:after, .fas:after { content: '\00A0\00A0\00A0'; }
         .note { color: mediumseagreen; }
 
         @media (min-width: 576px) { 
             html { font-size: 14pt; line-height: 1.5; }
+            .fab:after, .far:after, .fas:after { content: '\00A0\00A0'; }
+        }
+
+        @media (min-width: 768px) { 
+            .fab:after, .far:after, .fas:after { content: '\00A0'; }
         }
     </style>
     <title>Calogero Miraglia | Home page</title>
