@@ -8,26 +8,32 @@
     <style type="text/css">
         html { /*color:#1e1e1e;*/ line-height: 1.65; font-size: 20px; font-family: 'Trebuchet MS', Arial, sans-serif; }
         body { margin: 0 auto; padding: 0 0.8em; max-width: 650px; }
-        a { text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul.no-bullets { list-style-type: none; padding: 0; margin: 0; }
-        .fab:after { content: '\00A0'; }
-        article { padding: 1.25em; margin-bottom: 1.2em; border: 1px solid lightgrey; border-style: outset; }
+        header, footer, nav, section, article { margin: 1.2em 0; }
+        article { padding: 1.25em; border: 1px solid lightgrey; border-style: outset; }
         article h3 { margin: 0; }
         article button { padding: 0.5em; cursor:pointer; }
         footer, nav { font-size: smaller; }
         footer, nav, nav a, footer a { color: #555; }
         footer { border-top: 1px solid lightgrey; }
         nav { border-bottom: 1px solid lightgrey; }
-        nav a { text-decoration: underline; }
-        /*nav a:hover { color: #222; }*/
+        a { text-decoration: none; }
+        a:hover, nav a { text-decoration: underline; }
+        ul.no-bullets { list-style-type: none; padding: 0; margin: 0; }
+        .fab:after { content: '\00A0'; }
+        .text-center { text-align: center; }
+        .margin-top-2 { margin-top: 2em; }
+        /**/
+        body.chalkboard { background-image: url('chalkboard.jpg'); color: white; }
+        body.chalkboard a { color: yellow; }
+        body.chalkboard article button { font-weight: bold; color: red; background-color: yellow; }
+        body.chalkboard footer, body.chalkboard nav, body.chalkboard nav a, body.chalkboard footer a { color: #aaa; }
     </style>
 </head>
-<body>
+<body class="">
     <nav>
         <p>This page is also available automatically translated in other languages, e.g. <a rel="alternate" hreflang="it" lang="it" target="_blank" href="https://translate.google.com/translate?hl=en&sl=en&tl=it&u=https%3A%2F%2Fcalog3r0.github.io%2F">Italiano</a>.</p>
     </nav>
-    <header>
+    <header class="margin-top-2">
         <h1>Calogero Miraglia</h1>
         <ul class="no-bullets">
             <li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn profile</a></li>
@@ -73,7 +79,16 @@
         <article>
             <h3><a target="_blank" href="https://github.com/calog3r0/wr-search">WR-Search</a></h3>
             <p>Chrome extension for searching WordReference without leaving the page</p>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/wordreference-dictionary/" rel="nofollow"><img src="https://raw.githubusercontent.com/calog3r0/wr-search/master/img/get-the-addon.png" alt="Get the add-on for Firefox" style="max-width:100%;"></a>
         </article>
+    </section>
+    <section class="margin-top-2 text-center">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="5TWXW9VM35FAA" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/IT/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
+        </form>
     </section>
     <footer>
         <p>
