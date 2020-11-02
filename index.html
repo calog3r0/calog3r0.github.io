@@ -17,7 +17,7 @@
         footer { border-top: 1px solid lightgrey; }
         aside { border-bottom: 1px solid lightgrey; }
         a { text-decoration: none; }
-        a:hover, aside a { text-decoration: underline; }
+        a:hover, aside a, footer a { text-decoration: underline; }
         ul.no-bullets { list-style-type: none; padding: 0; margin: 0; }
         .fab:after { content: '\00A0'; }
         .text-center { text-align: center; }
@@ -30,18 +30,8 @@
     </style>
 </head>
 <body class="">
-    <aside>
-        <p>This page is also available automatically translated in other languages, e.g. <a rel="alternate" hreflang="it" lang="it" target="_blank" href="https://translate.google.com/translate?hl=en&sl=en&tl=it&u=https%3A%2F%2Fcalog3r0.github.io%2F">Italiano</a>.</p>
-    </aside>
-    <header class="margin-top-2">
+    <main>
         <h1>Calogero Miraglia</h1>
-        <ul class="no-bullets">
-            <li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn profile</a></li>
-            <li><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub profile</a></li>
-        </ul>
-    </header>
-    <section>
-        <h2>About me</h2>
         <p>
             I am a software engineer and a web developer based in Sicily, Italy. 
             I specialize in backend development and databases. 
@@ -50,7 +40,11 @@
         <p>
             Learn more about me on <a target="_blank" aria-label="my resume (PDF)" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">my resume</a>.
         </p>
-    </section>
+        <ul class="no-bullets">
+            <li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn profile</a></li>
+            <li><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub profile</a></li>
+        </ul>
+    </main>
     <section>
         <h2>Projects</h2>
         <p>The following are some of <a target="_blank" href="https://github.com/calog3r0?tab=repositories">my projects on GitHub</a>.</p>
@@ -84,6 +78,7 @@
     </section>
     <footer>
         <p>
+            This page is also available automatically translated in other languages, e.g. <a rel="alternate" hreflang="it" lang="it" target="_blank" href="https://translate.google.com/translate?hl=en&sl=en&tl=it&u=https%3A%2F%2Fcalog3r0.github.io%2F">Italiano</a>. <br>
             Last update on September 2020 (first published on November 2017). 
             Copyright &copy; 2020 Calogero Miraglia. All rights reserved. 
             This website does not use cookies.
