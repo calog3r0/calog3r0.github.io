@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,36 +12,31 @@
         header, footer, aside, section, article { margin: 1.2em 0; }
         article { padding: 1.25em; border: 1px solid lightgrey; border-style: outset; }
         article h3 { margin: 0; }
-        article button { cursor: pointer; font-size: 0.8em; padding: 0.6em 2em; }
-        footer, aside { font-size: smaller; }
-        footer, aside, aside a, footer a { color: #555; }
+        article button { cursor: pointer; font-size: 1em; width: 172px; height: 60px; border-radius: 4px; }
+        footer { font-size: smaller; }
+        footer, footer a { color: #555; }
         footer { border-top: 1px solid lightgrey; }
-        aside { border-bottom: 1px solid lightgrey; }
         a { text-decoration: none; }
-        a:hover, aside a, footer a { text-decoration: underline; }
+        a:hover, footer a { text-decoration: underline; }
         ul.no-bullets { list-style-type: none; padding: 0; margin: 0; }
-        .fab:after { content: '\00A0'; }
-        .text-center { text-align: center; }
-        .margin-top-2 { margin-top: 2em; }
+        .fab:after, .fas:after { content: '\00A0'; }
         /**/
-        body.chalkboard { background-image: url('chalkboard.jpg'); color: white; }
+        body.chalkboard { background-image: url('assets/img/chalkboard.jpg'); color: white; }
         body.chalkboard a { color: yellow; }
-        body.chalkboard article button { font-weight: bold; color: red; background-color: yellow; }
-        body.chalkboard footer, body.chalkboard nav, body.chalkboard nav a, body.chalkboard footer a { color: #aaa; }
+        body.chalkboard article button { font-weight: bold; color: red; background-color: yellow; border: 0; }
+        body.chalkboard footer, body.chalkboard footer a { color: #aaa; }
     </style>
 </head>
-<body class="">
+<body class="chalkboard">
     <main>
-        <h1>Hi! I'm Calogero Miraglia</h1>
+        <h1>Calogero Miraglia</h1>
         <p>
-            I'm a Software Engineer with a BS in Computer Science, 
+            I am a Software Engineer with a BS in Computer Science, 
             experienced in back-end development (PHP, MySQL, Node.js, MongoDB), 
             based in Sicily, Italy.
         </p>
-        <p>
-            Learn more about me on <a target="_blank" aria-label="my CV (PDF)" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">my resume</a>.
-        </p>
         <ul class="no-bullets">
+            <li><i class="fas fa-file-pdf"></i> <a target="_blank" aria-label="my CV (PDF)" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">CV/resume</a></li>
             <li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn profile</a></li>
             <li><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub profile</a></li>
         </ul>
