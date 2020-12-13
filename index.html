@@ -11,19 +11,19 @@
         header, footer, section, article { margin: 1.2em 0; }
         article { padding: 1.25em; border: 1px solid lightgrey; border-style: outset; }
         article h3 { margin: 0; }
-        article button { cursor: pointer; font-size: 1em; width: 172px; height: 60px; border-radius: 4px; }
+        article button { cursor: pointer; font-size: 1em; width: 170px; height: 56px; border-radius: 4px; }
         footer { font-size: smaller; }
         footer, footer a { color: #555; }
         footer { border-top: 1px solid lightgrey; }
         a { text-decoration: none; }
         a:hover, footer a { text-decoration: underline; }
         ul.no-bullets { list-style-type: none; padding: 0; margin: 0; }
-        .fab:after, .fas:after { content: '\00A0'; }
+        .space-after:after { content: '\00A0'; }
         /**/
-        body.chalkboard { background-image: url('assets/img/chalkboard.jpg'); color: white; background-color:#1e1e1e; }
-        body.chalkboard a { color: yellow; }
-        body.chalkboard article button { font-weight: bold; color: red; background-color: yellow; border: 0; }
-        body.chalkboard footer, body.chalkboard footer a { color: #aaa; }
+        body.dark-mode { background-image: url('assets/img/chalkboard.jpg'); color: white; background-color:#1e1e1e; }
+        body.dark-mode a { color: yellow; }
+        body.dark-mode article button { font-weight: bold; color: red; background-color: yellow; border: 0; }
+        body.dark-mode footer, body.dark-mode footer a { color: #aaa; }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -31,7 +31,8 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body class="chalkboard">
+<body class="dark-mode">
+    <button style="float: right; padding: 0; border-radius: 50%; padding: 2px 5px;" onclick="myFunction()"><i class="far fa-lightbulb"></i></button>
     <main>
         <h1>Calogero Miraglia</h1>
         <p>
@@ -40,9 +41,9 @@
             based in Sicily, Italy.
         </p>
         <ul class="no-bullets">
-            <li><i class="fas fa-file-pdf"></i> <a target="_blank" aria-label="my CV (PDF)" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">CV/resume</a></li>
-            <li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn profile</a></li>
-            <li><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub profile</a></li>
+            <li><i class="fas fa-file-pdf space-after"></i> <a target="_blank" aria-label="my CV (PDF)" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">CV/resume</a></li>
+            <li><i class="fab fa-linkedin space-after"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn profile</a></li>
+            <li><i class="fab fa-github space-after"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub profile</a></li>
         </ul>
     </main>
     <section>
@@ -51,12 +52,12 @@
         <article>
             <h3><a target="_blank" href="https://github.com/calog3r0/briscola.js">Briscola.js</a></h3>
             <p>A JavaScript implementation of the game of briscola</p>
-            <form action="demo/briscola.js/index.html"><button>DEMO</button></form>
+            <form action="demo/briscola.js/index.html"><button><i class="fas fa-play space-after"></i> DEMO</button></form>
         </article>
         <article>
             <h3><a target="_blank" href="https://github.com/calog3r0/clicklog.js">ClickLog.js</a></h3>
             <p>An experiment with localstorage and Date in JavaScript</p>
-            <form action="demo/clicklog.js/index.html"><button>DEMO</button></form>
+            <form action="demo/clicklog.js/index.html"><button><i class="fas fa-play space-after"></i> DEMO</button></form>
         </article>
         <article>
             <h3><a target="_blank" href="https://github.com/calog3r0/wr-search">WR-Search</a></h3>
@@ -72,5 +73,11 @@
             This website does not use cookies.
         </p>
     </footer>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
