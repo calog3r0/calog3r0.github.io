@@ -8,6 +8,7 @@
     <style type="text/css">
         html { /*color:#1e1e1e;*/ line-height: 1.65; font-size: 20px; font-family: 'Trebuchet MS', Arial, sans-serif; }
         body { margin: 0 auto; padding: 0 1em; max-width: 650px; }
+        h1, #menu-icon { font-size: 2em; font-weight: bold; }
         header, footer, section, article { margin: 1.2em 0; }
         button { cursor: pointer; }
         article { padding: 1.25em; border: 1px solid lightgrey; border-style: outset; }
@@ -20,8 +21,13 @@
         ul.no-bullets { list-style-type: none; padding: 0; margin: 0; }
         .space-after:after { content: '\00A0'; }
         /**/
+        #menu[data-state="close"] { display: none; }
+        #menu[data-state="open"] { display: block; }
+        #menu ul > li:first-child { border-top: 1px solid lightgrey; }
+        #menu ul > li { border-bottom: 1px solid lightgrey; padding: 0.5em 0; }
+        /**/
         body.dark-mode { background-image: url('assets/img/chalkboard.jpg'); color: white; background-color:#1e1e1e; }
-        body.dark-mode a { color: yellow; }
+        body.dark-mode a, body.dark-mode #toggle-dark-icon { color: yellow; }
         body.dark-mode article button { font-weight: bold; color: red; background-color: yellow; border: 0; }
         body.dark-mode footer, body.dark-mode footer a { color: #aaa; }
     </style>
@@ -32,51 +38,82 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body class="dark-mode">
-    <button style="float: right; padding: 0; border-radius: 50%; padding: 2px 5px;" onclick="myFunction()"><i class="far fa-lightbulb"></i></button>
+    <header style="display: flex; align-items: baseline; margin: 0;">
+        <div style="flex: 80%;">
+            <h1>Calogero Miraglia</h1>
+        </div>
+        <div style="flex: 20%; text-align: right;">
+            <i id="menu-icon" class="fas fa-bars" style="cursor: pointer;" onclick="menu()"></i>
+        </div>
+    </header>
+    <nav id="menu" data-state="close" style="margin-bottom: 3em;">
+        <ul class="no-bullets">
+            <li><span class="space-after">🇮🇹</span> <a rel="alternate" hreflang="it" lang="it" target="_blank" href="https://translate.google.com/translate?hl=en&sl=en&tl=it&u=https%3A%2F%2Fcalog3r0.github.io%2F">Italiano</a></li>
+            <li><span style="cursor: pointer;" onclick="lightSwitch();"><i id="toggle-dark-icon" class="fas fa-toggle-on" data-state="on"></i> <span class="space-after"></span>Dark mode</span></li>
+        </ul>
+    </nav>
     <main>
-        <h1>Calogero Miraglia</h1>
         <p>
             I am a Software Engineer with a BS in Computer Science, 
             experienced in back-end development (PHP, MySQL, Node.js, MongoDB), 
             based in Sicily, Italy.
         </p>
         <ul class="no-bullets">
-            <li><i class="fas fa-file-pdf space-after"></i> <a target="_blank" aria-label="my CV (PDF)" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">CV/resume</a></li>
-            <li><i class="fab fa-linkedin space-after"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn profile</a></li>
-            <li><i class="fab fa-github space-after"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub profile</a></li>
+            <li><i class="fas fa-file-pdf space-after"></i> <a aria-label="my CV (PDF)" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">CV/resume</a></li>
+            <li><i class="fab fa-linkedin space-after"></i> <a href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn</a></li>
+            <li><i class="fab fa-github space-after"></i> <a href="https://github.com/calog3r0">GitHub</a></li>
         </ul>
     </main>
     <section>
         <h2>Featured projects</h2>
         <p>The following are some of my projects on GitHub.</p>
         <article>
-            <h3><a target="_blank" href="https://github.com/calog3r0/briscola.js">Briscola.js</a></h3>
+            <h3><a href="https://github.com/calog3r0/briscola.js">Briscola.js</a></h3>
             <p>A JavaScript implementation of the game of briscola</p>
             <form action="demo/briscola.js/index.html"><button><i class="fas fa-play space-after"></i> DEMO</button></form>
         </article>
         <article>
-            <h3><a target="_blank" href="https://github.com/calog3r0/clicklog.js">ClickLog.js</a></h3>
+            <h3><a href="https://github.com/calog3r0/clicklog.js">ClickLog.js</a></h3>
             <p>An experiment with localstorage and Date in JavaScript</p>
             <form action="demo/clicklog.js/index.html"><button><i class="fas fa-play space-after"></i> DEMO</button></form>
         </article>
         <article>
-            <h3><a target="_blank" href="https://github.com/calog3r0/wr-search">WR-Search</a></h3>
+            <h3><a href="https://github.com/calog3r0/wr-search">WR-Search</a></h3>
             <p>Firefox extension for searching WordReference without leaving the page</p>
-            <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/wordreference-dictionary/" rel="nofollow"><img src="https://raw.githubusercontent.com/calog3r0/wr-search/master/img/get-the-addon.png" alt="Get the add-on for Firefox" style="max-width:100%;"></a>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/wordreference-dictionary/" rel="nofollow"><img src="https://raw.githubusercontent.com/calog3r0/wr-search/master/img/get-the-addon.png" alt="Get the add-on for Firefox" style="max-width:100%;"></a>
         </article>
     </section>
     <footer>
         <p>
-            This page is also available automatically translated in other languages, e.g. <a rel="alternate" hreflang="it" lang="it" target="_blank" href="https://translate.google.com/translate?hl=en&sl=en&tl=it&u=https%3A%2F%2Fcalog3r0.github.io%2F">Italiano</a>.
             Last update on November 2020 (first published on November 2017). 
             Copyright &copy; 2020 Calogero Miraglia. All rights reserved. 
             This website does not use cookies.
         </p>
     </footer>
     <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
+        var $menu = document.getElementById("menu");
+        var $menuIcon = document.getElementById("menu-icon");
+        var $toggleDarkIcon = document.getElementById("toggle-dark-icon");
+
+        function lightSwitch() {
+            document.body.classList.toggle("dark-mode");
+            if ($toggleDarkIcon.dataset.state === "on") {
+                $toggleDarkIcon.dataset.state = "off";
+                $toggleDarkIcon.className = "fas fa-toggle-off";
+            } else {
+                $toggleDarkIcon.dataset.state = "on";
+                $toggleDarkIcon.className = "fas fa-toggle-on";
+            }
+        }
+
+        function menu() {
+            if ($menu.dataset.state === "close") {
+                $menu.dataset.state = "open";
+                $menuIcon.className = "fas fa-times";
+            } else {
+                $menu.dataset.state = "close";
+                $menuIcon.className = "fas fa-bars";
+            }
         }
     </script>
 </body>
