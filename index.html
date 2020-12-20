@@ -54,7 +54,7 @@
     </nav>
     <main>
         <p>
-            I am a Software Engineer with a BS in Computer Science, 
+            Hi, I'm Calogero Miraglia. I'm a Software Engineer with a BS in Computer Science, 
             experienced in back-end development (PHP, MySQL, Node.js, MongoDB), 
             based in Sicily, Italy.
         </p>
@@ -101,6 +101,7 @@
                 $toggleDarkIcon.dataset.state = "off";
                 $toggleDarkIcon.className = "fas fa-toggle-off";
             } else {
+                console.log('on')
                 $toggleDarkIcon.dataset.state = "on";
                 $toggleDarkIcon.className = "fas fa-toggle-on";
             }
@@ -111,6 +112,7 @@
 
         window.addEventListener('DOMContentLoaded', (event) => {
             if (storageAvailable('localStorage')) {
+                console.log(localStorage)
                 if (localStorage.getItem('darkMode') === 'off') {
                     lightSwitch();
                 }
