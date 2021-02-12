@@ -1,42 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Calogero Miraglia - Home page</title>
     <meta name="description" content="Software Engineer and Back-End Developer (PHP, MySQL, Node.js, MongoDB)">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-        html { /*color:#1e1e1e;*/ line-height: 1.5; font-size: 21px; font-family: Arial, sans-serif; }
-        body { margin: 1em auto 0; padding: 0 1em; max-width: 730px; }
-        h1, #menu-icon { font-size: 1.8em; font-weight: bold; margin-bottom: 0.2em; }
-        #menu-icon { vertical-align: bottom; font-size: 1.45em; color: darkgrey; }
-        header, footer, section, article { margin: 1.5em 0; }
-        button { cursor: pointer; }
-        article { padding: 1.25em; border: 1px solid lightgrey; border-style: outset; }
-        article h3 { margin: 0; }
-        article button { font-size: 1em; width: 170px; height: 56px; border-radius: 4px; }
-        footer { font-size: smaller; border-top: 1px solid lightgrey; }
-        footer, footer a { color: #555; }
-        a { text-decoration: none; }
-        a:hover, footer a { text-decoration: underline; }
-        ul.no-bullets { list-style-type: none; padding: 0; margin: 0; }
-        .space-after:after, .space-before:before { content: '\00A0'; }
-        .alogero { display: none; }
-        @media only screen and (min-width: 600px) {
-            .alogero { display: initial; }
-            .dot { display: none; }
-        }
-        /**/
-        #menu[data-state="close"] { display: none; }
-        #menu[data-state="open"] { display: block; }
-        #menu ul > li:first-child { border-top: 1px solid lightgrey; }
-        #menu ul > li { border-bottom: 1px solid lightgrey; padding: 0.5em 0; }
-        /**/
-        body.dark-mode { background-image: url('assets/img/chalkboard.jpg'); color: white; background-color:#1e1e1e; }
-        body.dark-mode a, body.dark-mode #toggle-dark-icon { color: yellow; }
-        body.dark-mode article button { font-weight: bold; color: red; background-color: yellow; border: 0; }
-        body.dark-mode footer, body.dark-mode footer a { color: #aaa; }
-        body.dark-mode #menu-icon { color: yellow; }
+    <style>
+        html, body { height: 100%; font-size: 16px; }
+        body { display: flex; align-items: center; justify-content: center; }
+        body { margin: 0 auto; text-align: center; font-family: Arial, Helvetica, sans-serif; }
+        main > div.icons { margin: 1rem; }
+        main > div.other-links { margin-top: 4rem; font-size: 1.3rem; }
+        h1, p, div.icons a { margin: 0.6rem; }
+        h1 { font-size: 2.3rem; }
+        p { font-size: 1.5rem; }
+        div.icons a { font-size: 2rem; }
+        button { font-size: 1.3rem; cursor: pointer; padding: 0.4rem; }
+        a { color: grey; }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -44,126 +24,26 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body class="dark-mode">
-    <header style="display: flex; align-items: baseline; margin: 0;">
-        <div style="flex: 80%;">
-            <h1>C<span class="dot">.</span><span class="alogero">alogero</span> Miraglia</h1>
-        </div>
-        <div style="flex: 20%; text-align: right;">
-            <!-- fa-ellipsis-v -->
-            <i id="menu-icon" class="fas fa-bars" style="cursor: pointer;" onclick="menu()"></i>
-        </div>
-    </header>
-    <nav id="menu" data-state="close" style="margin-top: 2em; margin-bottom: 3em; text-align: right;">
-        <ul class="no-bullets">
-            <li><a rel="alternate" hreflang="it" lang="it" target="_blank" href="https://translate.google.com/translate?hl=en&sl=en&tl=it&u=https%3A%2F%2Fcalog3r0.github.io%2F">Italiano</a> <span class="space-before">🇮🇹</span></li>
-            <li><span style="cursor: pointer;" onclick="lightSwitch();">Dark mode<span class="space-before"></span> <i id="toggle-dark-icon" class="fas fa-toggle-on" data-state="on"></i></span></li>
-        </ul>
-    </nav>
+<body>
     <main>
-        <h2>About</h2>
-        <p>
-            Hi! I'm Calogero Miraglia.
-            I'm a Software Engineer and Backend Web Developer living in Sicily, Italy. 
-        </p>
-        <ul class="no-bullets">
-            <li><i class="fas fa-file-pdf space-after"></i> <a aria-label="my CV (PDF)" target="_blank" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">CV/resume</a></li>
-            <li><i class="fab fa-linkedin space-after"></i> <a target="_blank" href="https://www.linkedin.com/in/calogeromiraglia">LinkedIn</a></li>
-            <li><i class="fab fa-github space-after"></i> <a target="_blank" href="https://github.com/calog3r0">GitHub</a></li>
-        </ul>
+        <!--https://openclipart.org/detail/103855/tux-the-penguin-->
+        <img src="assets/img/tux.svg" alt="avatar" width="50%">
+        <h1>calogero miraglia</h1>
+        <p>software engineer</p>
+        <div class="icons">
+            <a aria-label="LinkedIn profile" target="_blank" href="https://www.linkedin.com/in/calogeromiraglia"><i class="fab fa-linkedin-in"></i></a>
+            <a aria-label="GitHub profile" target="_blank" href="https://github.com/calog3r0"><i class="fab fa-github"></i></a>
+            <a aria-label="Email" href="mailto:calogeromir@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+        <form target="_blank" action="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">
+            <button>cv / resume</button>
+        </form>
+        <div class="other-links">
+            featured: <br>
+            <a href="demo/briscola.js/index.html">briscola</a>,
+            <a href="demo/clicklog.js/index.html">clicklog</a>,
+            <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/wordreference-dictionary/">wr-search</a>
+        </div>
     </main>
-    <section>
-        <h2>Featured</h2>
-        <p>The following are some of my projects on GitHub.</p>
-        <article>
-            <h3><a target="_blank" href="https://github.com/calog3r0/briscola.js">Briscola.js</a></h3>
-            <p>A JavaScript implementation of the game of briscola</p>
-            <form target="_blank" action="demo/briscola.js/index.html"><button><i class="fas fa-play space-after"></i> DEMO</button></form>                         
-        </article>
-        <article>
-            <h3><a target="_blank" href="https://github.com/calog3r0/clicklog.js">ClickLog.js</a></h3>
-            <p>An experiment with localstorage and Date in JavaScript</p>
-            <form target="_blank" action="demo/clicklog.js/index.html"><button><i class="fas fa-play space-after"></i> DEMO</button></form>
-        </article>
-        <article>
-            <h3><a target="_blank" href="https://github.com/calog3r0/wr-search">WR-Search</a></h3>
-            <p>Firefox extension for searching WordReference without leaving the page</p>
-            <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/wordreference-dictionary/" rel="nofollow"><img src="assets/img/get-the-addon.png" alt="Get the add-on for Firefox" style="display: block;"></a>
-        </article>
-    </section>
-    <footer>
-        <p>
-            Last update on November 2020 (first published on November 2017). 
-            Copyright &copy; 2020 Calogero Miraglia. All rights reserved. 
-            This website does not use cookies.
-        </p>
-    </footer>
-    <script>
-        var $menu = document.getElementById("menu");
-        var $menuIcon = document.getElementById("menu-icon");
-        var $toggleDarkIcon = document.getElementById("toggle-dark-icon");
-
-        function lightSwitch() {
-            document.body.classList.toggle("dark-mode");
-            if ($toggleDarkIcon.dataset.state === "on") {
-                $toggleDarkIcon.dataset.state = "off";
-                $toggleDarkIcon.className = "fas fa-toggle-off";
-            } else {
-                $toggleDarkIcon.dataset.state = "on";
-                $toggleDarkIcon.className = "fas fa-toggle-on";
-            }
-            if (storageAvailable('localStorage')) {
-                localStorage.setItem('darkMode', $toggleDarkIcon.dataset.state);
-            }
-        }
-
-        window.addEventListener('DOMContentLoaded', (event) => {
-            if (storageAvailable('localStorage')) {
-                console.log(localStorage)
-                if (localStorage.getItem('darkMode') === 'off') {
-                    lightSwitch();
-                }
-            }
-        });
-
-        function menu() {
-            if (! $menu.dataset.className) {
-                $menu.dataset.className = $menuIcon.className;
-            }
-
-            if ($menu.dataset.state === "close") {
-                $menu.dataset.state = "open";
-                $menuIcon.className = "fas fa-times";
-            } else {
-                $menu.dataset.state = "close";
-                $menuIcon.className = $menu.dataset.className;
-            }
-        }
-
-        function storageAvailable(type) {
-            var storage;
-            try {
-                storage = window[type];
-                var x = '__storage_test__';
-                storage.setItem(x, x);
-                storage.removeItem(x);
-                return true;
-            }
-            catch(e) {
-                return e instanceof DOMException && (
-                    // everything except Firefox
-                    e.code === 22 ||
-                    // Firefox
-                    e.code === 1014 ||
-                    // test name field too, because code might not be present
-                    // everything except Firefox
-                    e.name === 'QuotaExceededError' ||
-                    // Firefox
-                    e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-                    // acknowledge QuotaExceededError only if there's something already stored
-                    (storage && storage.length !== 0);
-            }
-        }
-    </script>
 </body>
 </html>
