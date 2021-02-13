@@ -6,16 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        html, body { height: 100%; font-size: 16px; }
-        body { display: flex; align-items: center; justify-content: center; }
+        html { font-size: 16px; }
+        body { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
         body { margin: 0 auto; text-align: center; font-family: Arial, Helvetica, sans-serif; }
-        main > div.icons { margin: 1rem; }
-        main > div.other-links, form { margin-top: 2.7rem; font-size: 1.3rem; }
-        h1, h2, div.icons a, p { margin: 0.6rem; }
+        main, div.icons { margin: 1rem; }
+        div.other-links, form { margin-top: 2.7rem; }
+        h1, h2, div.icons > a, div.other-links > p { margin: 0.6rem; }
         h1 { font-size: 2.3rem; }
         h2 { font-size: 1.5rem; font-weight: normal; }
         div.icons a { font-size: 2rem; }
-        button { font-size: 1.3rem; cursor: pointer; padding: 0.5rem; }
+        div.other-links, form, button { font-size: 1.3rem; }
+        button { cursor: pointer; padding: 0.5rem; }
         a { color: #23629F; }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -39,7 +40,7 @@
             <button>cv / resume</button>
         </form>
         <div class="other-links">
-            <p>featured: </p>
+            <p>featured:</p>
             <a href="demo/briscola.js/index.html">briscola</a>,
             <a href="demo/clicklog.js/index.html">clicklog</a>,
             <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/wordreference-dictionary/">wr-search</a>
