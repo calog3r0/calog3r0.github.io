@@ -11,10 +11,11 @@
     body { display: flex; align-items: center; justify-content: center; flex-direction: column; }
     body { margin: 0 auto; text-align: center; font-family: Arial, Helvetica, sans-serif; }
     div.icons { margin: 1rem; }
-    h1, h2, div.icons, footer > p { margin-bottom: 0rem; }
+    h1, h2, div.icons, footer > p { margin-bottom: 0; }
     h1, h2, div.icons > a, div.other-links > p { margin: 0.6rem; }
-    h1 { margin-top: 1.5rem; }
-    form, div.other-links, footer { margin-top: 2rem; }
+    h1, form { margin-top: 1.5rem; }
+    form:first-child { margin-top: 0; }
+    div.other-links, footer { margin-top: 2rem; }
     h1 { font-size: 2.3rem; }
     h2 { font-size: 1.5rem; font-weight: normal; }
     div.icons a { font-size: 2rem; }
@@ -22,7 +23,8 @@
     button { cursor: pointer; padding: 0.5rem; }
     a { color: #23629F; }
     a:hover { color: initial; }
-    .flex-content { margin: 0 1rem; display: flex; flex-direction: column; justify-content: space-evenly; }
+    .buttons { margin: 0 auto; width: 150px; margin-top: 2rem; }
+    .flex-content { display: flex; flex-direction: column; }
     .flex-item { display: flex; flex-direction: column; }
   </style>
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -34,7 +36,7 @@
 <body>
   <main>
     <!--https://openclipart.org/detail/103855/tux-the-penguin-->
-    <img alt="avatar" src="assets/img/tux.svg" width="30%">
+    <img alt="avatar" src="assets/img/tux.svg" width="40%">
     <h1>calogero miraglia</h1>
     <h2>software engineer</h2>
     <div class="icons">
@@ -47,7 +49,7 @@
       <a aria-label="About me" href="calogero-miraglia.html">
         <i class="fas fa-question-circle"></i></a>
     </div>
-    <div class="flex-content">
+    <div class="flex-content buttons">
       <form class="flex-item" target="_blank" action="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view">
         <button>cv</button>
       </form>
@@ -63,8 +65,10 @@
           >wr-search</a>
     </div>
   </main>
+  <!--
   <footer>
     <p><small>This website does not use cookies</small></p>
   </footer>
+  -->
 </body>
 </html>
