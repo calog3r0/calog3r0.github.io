@@ -5,10 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    html { font-size: 18px; }
-    body { font-family: Arial, Helvetica, sans-serif; }
-    body { max-width: 750px; margin: 1rem; }
-    nav { margin: 1.5rem 0 2rem; }
+    html, body { height: 100%; }
+    body { font-family: Arial, Helvetica, sans-serif; font-size: 18px; }
+    body { margin: 0; padding: 1rem; box-sizing: border-box; }
+    .wrapper { min-height: 100%; display: flex; flex-direction: column; }
+    main { flex-grow: 1; }
+    nav, .footer { flex-shrink: 0;}
+    footer { margin-top: 2rem; }
+    nav { margin: 1.5rem 0; }
     nav a { font-size: 2rem; text-decoration: none; }
     a { color: #23629F; }
     a:hover { color: initial; }
@@ -19,7 +23,7 @@
   <link rel="manifest" href="assets/favicon/site.webmanifest">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body>
+<body class="wrapper">
   <nav>
     <a aria-label="home" href="index.html"><i class="fas fa-igloo"></i></a>
   </nav> 
@@ -37,5 +41,8 @@
         >resume</a> or reading my <a target="_blank" href="https://drive.google.com/file/d/1f9li-RTNsb_CTaoYD8sFnNtre_2sdF4f/view"
         >full CV</a>.</p>
   </main>
+  <footer class="footer">
+    <p><small>This website does not use cookies</small></p>
+  </footer>
 </body>
 </html>
